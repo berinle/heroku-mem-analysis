@@ -6,7 +6,7 @@ This sample is for illustrative purposes only. It is to help troubleshoot memory
 
 1. Clone the application
 2. Change to the destination directory of the clone
-3. Run __./gradlew run__ on unix or __gradle.bat run__ on windows
+3. Run __./gradlew run__ on unix or __gradlew.bat run__ on windows
 4. Point your browser to [here](http://localhost:8080 "localhost")
 
 #### Profiling
