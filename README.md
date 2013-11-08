@@ -7,7 +7,7 @@ This sample is for illustrative purposes only. It is to help troubleshoot memory
 1. Clone the application
 2. Change to the destination directory of the clone
 3. Run __./gradlew run__ on unix or __gradlew.bat run__ on windows
-4. Point your browser to [here](http://localhost:8080 "localhost")
+4. Point your browser [here](http://localhost:8080 "localhost")
 
 #### Profiling
 Now you can profile the application with a profiler such as [YourKit](http://www.yourkit.com/download/index.jsp "Yourkit Download")
