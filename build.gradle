@@ -4,7 +4,7 @@ buildscript {
         mavenLocal()
     }
     dependencies {
-        classpath('org.springframework.boot:spring-boot-gradle-plugin:0.5.0.M5')
+        classpath('org.springframework.boot:spring-boot-gradle-plugin:0.5.0.M6')
     }
 }
 
@@ -37,7 +37,7 @@ dependencies {
 }
 
 task run(type:Exec){
-    commandLine "java -jar build/libs/app-0.1.0.jar".split(' ')
+    commandLine "java -javaagent:lib/heroku-javaagent-1.4.jar=stdout=true,lxmem=true -jar build/libs/app-0.1.0.jar".split(' ')
 }
 
 run.dependsOn build
