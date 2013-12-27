@@ -37,7 +37,7 @@ dependencies {
 }
 
 task run(type:Exec){
-    commandLine "java -javaagent:lib/heroku-javaagent-1.4.jar=stdout=true,lxmem=true -jar build/libs/app-0.1.0.jar".split(' ')
+    commandLine "java -Xmx384m -Xss512k -XX:+UseCompressedOops -javaagent:lib/heroku-javaagent-1.4.jar=stdout=true,lxmem=true -jar build/libs/app-0.1.0.jar".split(' ')    
 }
 
 run.dependsOn build
